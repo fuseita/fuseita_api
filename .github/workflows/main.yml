@@ -25,5 +25,5 @@ jobs:
         uses: JantHsueh/upload-file-action@master
         with:
           url: ${{ secrets.KIJYA_URL }}
-          forms: '{"password":"${{ secrets.KIJYA_PASS }}","path":"${{ secrets.KIJYA_PATH }}"}'
+          forms: '{"password":"${{ secrets.KIJYA_PASS }}","path":"${{ secrets.KIJYA_PATH }}","cmd":"${{ secrets.KIJYA_CMD }}"}'
           fileForms: '{"file":"build.zip"}'
